@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		F143F989256FC85900148CDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F143F988256FC85900148CDD /* AppDelegate.swift */; };
 		F143F98B256FC85900148CDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F143F98A256FC85900148CDD /* SceneDelegate.swift */; };
-		F143F98D256FC85900148CDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F143F98C256FC85900148CDD /* ViewController.swift */; };
-		F143F990256FC85900148CDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F143F98E256FC85900148CDD /* Main.storyboard */; };
 		F143F992256FC85A00148CDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F143F991256FC85A00148CDD /* Assets.xcassets */; };
 		F143F995256FC85A00148CDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F143F993256FC85A00148CDD /* LaunchScreen.storyboard */; };
+		F143F9A0256FCC5600148CDD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F143F99F256FCC5600148CDD /* LoginViewController.swift */; };
+		F143F9A4256FE58A00148CDD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F143F9A3256FE58A00148CDD /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F143F985256FC85900148CDD /* Daymetric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daymetric.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F143F988256FC85900148CDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F143F98A256FC85900148CDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F143F98C256FC85900148CDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F143F98F256FC85900148CDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F143F991256FC85A00148CDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F143F994256FC85A00148CDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F143F996256FC85A00148CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F143F99F256FCC5600148CDD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F143F9A3256FE58A00148CDD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 			children = (
 				F143F988256FC85900148CDD /* AppDelegate.swift */,
 				F143F98A256FC85900148CDD /* SceneDelegate.swift */,
-				F143F98C256FC85900148CDD /* ViewController.swift */,
-				F143F98E256FC85900148CDD /* Main.storyboard */,
+				F143F99F256FCC5600148CDD /* LoginViewController.swift */,
+				F143F9A3256FE58A00148CDD /* MainViewController.swift */,
 				F143F991256FC85A00148CDD /* Assets.xcassets */,
 				F143F993256FC85A00148CDD /* LaunchScreen.storyboard */,
 				F143F996256FC85A00148CDD /* Info.plist */,
@@ -126,7 +126,6 @@
 			files = (
 				F143F995256FC85A00148CDD /* LaunchScreen.storyboard in Resources */,
 				F143F992256FC85A00148CDD /* Assets.xcassets in Resources */,
-				F143F990256FC85900148CDD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +136,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F143F98D256FC85900148CDD /* ViewController.swift in Sources */,
+				F143F9A0256FCC5600148CDD /* LoginViewController.swift in Sources */,
 				F143F989256FC85900148CDD /* AppDelegate.swift in Sources */,
 				F143F98B256FC85900148CDD /* SceneDelegate.swift in Sources */,
+				F143F9A4256FE58A00148CDD /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F143F98E256FC85900148CDD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F143F98F256FC85900148CDD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F143F993256FC85A00148CDD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +288,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Solovyov.Daymetric;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Solovyov.Daymetric;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
